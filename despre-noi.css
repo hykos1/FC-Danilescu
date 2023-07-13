@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+header {
+  background: rgb(44, 97, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(44, 97, 126, 1) 0%,
+    rgba(44, 97, 126, 1) 20%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 2, 2, 1) 80%,
+    rgba(255, 2, 2, 1) 100%
+  );
+  height: 10vh;
+  width: 100vw;
+}
+
+.lista {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  padding-top: 0px;
+}
+
+li a {
+  position: relative;
+  z-index: 1;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.avatar {
+  width: 100px;
+  height: auto;
+  padding-top: 15px;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a:hover {
+  color: rgb(94, 15, 221);
+  padding-top: 12px;
+}
+
+nav a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  bottom: -4px;
+  background-color: black;
+  top: calc(50% - 1px - 10px);
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 90px;
+  box-sizing: border-box;
+}
+
+.left p,
+.right p {
+  font-size: 25px;
+  line-height: 1.5;
+  width: 300px;
+}
+
+main {
+  background-image: url(fundal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+
+main p {
+  text-align: left;
+}
+
+main img {
+  border-radius: 20%;
+}
+
+footer {
+  background-color: #cfcdcd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+footer img {
+  width: 400px;
+  height: auto;
+}
+
+.scris {
+  float: right;
+  padding-left: 400px;
+  padding-top: 40px;
+}
+
+footer ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright {
+  background-color: #015e9a;
+  margin-top: 0;
+  width: 100%;
+  height: 20px;
+  color: white;
+  text-align: center;
+}
