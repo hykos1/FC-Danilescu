@@ -6,10 +6,10 @@
 
 body {
   font-size: 16px;
-  font-family: fantasy;
 }
 
 header {
+  font-family: fantasy;
   background: rgb(44, 97, 126);
   background: linear-gradient(
     90deg,
@@ -61,6 +61,14 @@ h1 {
   text-align: center;
 }
 
+main {
+  background-image: url(fundal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+
 main section{
   column-count: 2;
   column-width: 200px;
@@ -71,10 +79,6 @@ main section{
 main section p{
   width: 25vw;
 }
-
-main section .descriere
-
-
 
 footer {
   background-color: #CFCDCD;

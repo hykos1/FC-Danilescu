@@ -7,10 +7,10 @@
 body {
   overflow-x: hidden;
   font-size: 16px;
-  font-family: fantasy;
 }
 
 header {
+  font-family: fantasy;
   background: rgb(44, 97, 126);
   background: linear-gradient(
     90deg,
