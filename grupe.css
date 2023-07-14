@@ -53,7 +53,9 @@ header img{
   width: auto;
 }
 
-
+header li a:hover, header li a:focus{
+  color: white;
+}
 
 h1 {
   text-align: center;

@@ -52,3 +52,7 @@ header img{
   height: 15vh;
   width: auto;
 }
+
+header li a:hover, header li a:focus{
+  color: white;
+}
