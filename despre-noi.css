@@ -33,7 +33,7 @@ header ul {
 }
 
 header li {
-  padding: 10px 50px;
+  padding: 10px 5vw;
   font-size: 5vh;
   flex: 1;
   display: flex;
@@ -47,13 +47,114 @@ header li a {
   text-decoration: none;
 }
 
-header img{
+header img {
   height: 15vh;
   width: auto;
 }
 
-header li a:hover, header li a:focus{
+header li a:hover,
+header li a:focus {
   color: white;
+  font-size: 6vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  font-size: 30px;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.hide-btn {
+  display: none;
+}
+.navdoi {
+  display: none;
+}
+
+@media only screen and (min-width: 100px) {
+  .navunu {
+    display: none;
+  }
+
+  .navdoi {
+    display: block;
+  }
+  .navdoi img {
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .navunu {
+    display: block;
+  }
+
+  .navdoi {
+    display: none;
+  }
+  .navdoi img {
+    display: none;
+  }
+
+  header li{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+header li{
+  padding: 20px 3vw;
+  font-size: 5vh;
+}
 }
 
 main {
@@ -62,6 +163,11 @@ main {
   background-repeat: no-repeat;
   background-position: center center;
   color: black;
+}
+
+h1 {
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
 
 main section{
