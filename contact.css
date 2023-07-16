@@ -114,7 +114,8 @@ header li a:focus {
 .hide-btn {
   display: none;
 }
-.navdoi {
+
+.navdoi{
   display: none;
 }
 
@@ -126,10 +127,12 @@ header li a:focus {
   .navdoi {
     display: block;
   }
-  .navdoi img {
+
+  .responsive-logo {
     float: right;
-    padding-right: 20px;
-    padding-top: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
   }
 }
 
@@ -145,16 +148,16 @@ header li a:focus {
     display: none;
   }
 
-  header li{
+  header li {
     font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-header li{
-  padding: 20px 3vw;
-  font-size: 5vh;
-}
+  header li {
+    padding: 20px 3vw;
+    font-size: 5vh;
+  }
 }
 
 h1 {

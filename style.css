@@ -25,7 +25,7 @@ header {
   width: 100vw;
 }
 
-header ul {
+.navunu ul {
   padding: 0;
   list-style: none;
   display: flex;
@@ -33,7 +33,7 @@ header ul {
   align-items: center;
 }
 
-header li {
+.navunu li {
   padding: 10px 5vw;
   flex: 1;
   display: flex;
@@ -42,13 +42,13 @@ header li {
   white-space: nowrap;
 }
 
-header li a {
+.navunu li a {
   font-size: 4vh;
   color: black;
   text-decoration: none;
 }
 
-header img {
+.navunu img {
   height: 15vh;
   width: auto;
 }
@@ -115,7 +115,8 @@ header li a:focus {
 .hide-btn {
   display: none;
 }
-.navdoi {
+
+.navdoi{
   display: none;
 }
 
@@ -127,10 +128,12 @@ header li a:focus {
   .navdoi {
     display: block;
   }
-  .navdoi img {
+
+  .responsive-logo {
     float: right;
-    padding-right: 20px;
-    padding-top: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
   }
 }
 
